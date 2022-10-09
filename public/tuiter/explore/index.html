@@ -3,80 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <title>Explore</title>
-  <link href = "index.css" rel = "stylesheet" />
+  <link href="index.css" rel="stylesheet"/>
 </head>
 <body>
 <!--Top search bar and navigation tab-->
-<div class="wd-border">
-<div class = "wd-search">
-  <label for = "search-tuiter"></label>
-  <input class = "wd-search-field" id = "search-tuiter" type="text" placeholder="Search Twiter" />
-  <a href="explore-settings.html" class="wd-gear"><span>&#9881</span></a>
-</div>
-  <div class="wd-float-done"></div>
 <div>
-  <ul class = "wd-nav">
-    <li><a href = "#"><span class="wd-selected-icon">For you</span></a></li>
-    <li><a href="#">Trending</a></li>
-    <li><a href="#">COVID-19</a></li>
-    <li><a href="#">News</a></li>
-    <li><a href="#">Sports</a></li>
-    <li><a href="#">Entertainment</a></li>
-  </ul>
-</div>
+  <div class="wd-search">
+    <label for="search-tuiter"></label>
+    <input class="wd-search-field" id="search-tuiter" type="text" placeholder="Search Twiter"/>
+    <a href="explore-settings.html" class="wd-gear"><span>&#9881</span></a>
+  </div>
+
+  <div>
+    <ul class="wd-nav">
+      <li class="wd-selected-tab"><a href="#">For you</a></li>
+      <li><a href="#">Trending</a></li>
+      <li><a href="#">COVID-19</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Sports</a></li>
+      <li><a href="#">Entertainment</a></li>
+    </ul>
+  </div>
 </div>
 
-<div class="wd-border"></div>
+<div class="wd-separator"></div>
 
 <!--Trending-->
-<div class = "wd-border">
-  <div class = "wd-trending-title">Starship</div>
-  <div class = "wd-trending-tweets-nums">55.5K Tweets</div>
+<div class="wd-trending">
+  <div class="wd-trending-topic">Trending in Science</div>
+  <div class="wd-trending-title"><b>Starship</b></div>
+  <div class="wd-trending-tweets-nums">55.5K Tweets</div>
 </div>
 
-<div class = "wd-border">
-  <div class = "wd-trending-topic">Sports Trending</div>
-  <div class = "wd-trending-title">Joe Corgi</div>
-  <div class = "wd-trending-tweets-nums">5,218 Tuits</div>
+<div class="wd-trending">
+  <div class="wd-trending-topic">Sports Trending</div>
+  <div class="wd-trending-title"><b>Joe Corgi</b></div>
+  <div class="wd-trending-tweets-nums">5,218 Tuits</div>
 </div>
 
 <!--post with title and image-->
-<div class = "wd-border">
-  <div class="wd-post-float-left">
-    <div><span class="wd-post-author">The New York Times</span>
-      <span class="wd-post-topic"> &#183 Yesterday</span></div>
-    <div class= "wd-post-title">CNN’s Cuomo conundrum: A star anchor with a brother in trouble</div>
-  <div class="wd-post-float-right"><img src="img/PostImg-1.png" class = "wd-post-image"></div>
+<div class="wd-post">
 
+  <div class="wd-post-float-left">
+    <div>
+      <span class="wd-post-author"><b>The New York Times</b></span>
+      <span class="wd-post-topic"> &#183 Yesterday</span>
+    </div>
+    <div class="wd-post-title">
+      <b>CNN’s Cuomo conundrum: A star anchor with a brother in trouble</b>
+    </div>
+  </div>
+
+  <div class="wd-post-float-right">
+    <img src="img/PostImg-1.png" class="wd-post-image">
+  </div>
 </div>
 <!--post with topic and image-->
-<div class = "wd-border">
+<div class="wd-post">
+  <div class="wd-post-float-left">
+    <div>
+      <span class="wd-post-topic">COVID-19</span>
+      <span class="wd-post-topic"> &#183 Live</span>
+    </div>
+
+    <div class="wd-post-title"><b>COVID-19: News and updates for Massachusetts</b></div>
+  </div>
+  <div class="wd-post-float-right"><img src="img/PostImg-2.png" class="wd-post-image"></div>
+</div>
+
+<!--post with title and image-->
+<div class="wd-post">
+  <div class="wd-post-float-left">
+    <div>
+      <span class="wd-post-author">Bloomberg Option</span>
+      <span class="wd-post-topic"> &#183 Yesterday</span>
+    </div>
+    <div class="wd-post-title">Thinking about getting a booster? Read this first.</div>
+  </div>
   <div class="wd-post-float-right">
-  <div class="wd-post-topic">COVID-19</div>
-  <div class= "wd-post-title">COVID-19: News and updates for Massachusetts</div>
-  <div class="wd-post-float-right"><img src="img/PostImg-2.png" class = "wd-post-image"></div>
+    <div class=wd-post-image><img src="img/PostImg-3.png" class="wd-post-image"></div>
+  </div>
 </div>
 
 <!--post with title and image-->
-<div>
-  <div class="wd-post-account">Bloomberg Option</div>
-  <div class = "wd-post-timestamp">Yesterday</div>
-  <div class= "wd-post-title">Thinking about getting a booster? Read this first.</div>
-  <div class = wd-post-image><img src="img/PostImg-3.png"></div>
-</div>
 
-<!--post with title and image-->
-<div>
-
-</div>
 
 <!--Trending-->
-<div>
-  <div class = "wd-trending-topic">Trending in United States</div>
-  <div class = "wd-trending-title">Wonder Bread</div>
-  <div class = "wd-trending-tweets-nums">1259 Tweets</div>
+<div class="wd-trending">
+  <div class="wd-trending-topic">Trending in United States</div>
+  <div class="wd-trending-title">Wonder Bread</div>
+  <div class="wd-trending-tweets-nums">1259 Tweets</div>
 </div>
-
 
 
 </body>
