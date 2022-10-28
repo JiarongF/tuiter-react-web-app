@@ -5,7 +5,6 @@ import {useSelector} from "react-redux";
 const HelloReduxExampleComponent = () => {
   const message = useSelector((state) => state.hello.message);
 
-  // render the message in H1 tag
   return(
       <h1>{message}</h1>
   )
