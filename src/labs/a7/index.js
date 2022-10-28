@@ -6,6 +6,7 @@ const Assignment7 = () => {
       <>
         <h1>Assignment 7</h1>
         <ReduxExamples/>
+
       </>
   );
 };
