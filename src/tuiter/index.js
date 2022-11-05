@@ -9,11 +9,12 @@ import HomeComponent from "./home";
 import whoReducer
   from "./reducers/who-reducer";
 import tuitsReducer from "./reducers/tuits-reducer";
+import profileReducer from "./reducers/profile-reducer";
 import { configureStore }
   from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
-const store = configureStore({
-  reducer: {who: whoReducer, tuits: tuitsReducer}});
+const store = configureStore({reducer: {who: whoReducer, tuits: tuitsReducer, profile: profileReducer}});
+
 
 
 function Tuiter() {

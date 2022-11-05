@@ -13,7 +13,7 @@ const ProfileComponent = () => {
           </Link>
           <div className="ms-5">
             <h4 className="fw-bold m-0">{profile.firstName} {profile.lastName}</h4>
-            <p className="text-secondary m-o">6,114 Tuits</p>
+            <p className="text-secondary m-o">1,314 Tuits</p>
           </div>
         </div>
 
