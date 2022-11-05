@@ -40,7 +40,7 @@ const TuitItem = (
               <div><a href="tuits-list.js"><i className="bi bi-chat"></i></a><span className="ms-2">{post.replies}</span></div>
               <div><a href="tuits-list.js"><i className="bi bi-repeat"></i></a><span className="ms-2">{post.retuits}</span></div>
               <div><a href="tuits-list.js">{post.liked? <i className="bi bi-heart-fill text-danger"></i>: <i className="bi bi-heart"></i>}</a><span className="ms-2">{post.likes}</span></div>
-              <a href="tuits-list.js"><i className="bi bi-share"></i></a>
+ <i className="bi bi-share"></i>
             </div>
           </div>
         </div>
