@@ -1,4 +1,5 @@
 import React from "react";
+import TuitStats from "./tuit-stats"
 import {useDispatch} from "react-redux";
 import {deleteTuitThunk} from "../../services/tuits-thunks";
 
@@ -36,12 +37,7 @@ const TuitItem = (
               <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(post._id)}></i>
             </div>
             <div>{post.tuit}</div>
-            <div className="d-flex justify-content-between me-5 mt-2">
-              <div><a href="tuits-list.js"><i className="bi bi-chat"></i></a><span className="ms-2">{post.replies}</span></div>
-              <div><a href="tuits-list.js"><i className="bi bi-repeat"></i></a><span className="ms-2">{post.retuits}</span></div>
-              <div><a href="tuits-list.js">{post.liked? <i className="bi bi-heart-fill text-danger"></i>: <i className="bi bi-heart"></i>}</a><span className="ms-2">{post.likes}</span></div>
- <i className="bi bi-share"></i>
-            </div>
+            <TuitStats tuit={post}/>
           </div>
         </div>
       </li>
