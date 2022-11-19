@@ -8,7 +8,7 @@ import {Routes, Route} from "react-router";
 import HomeComponent from "./home";
 import whoReducer
   from "./reducers/who-reducer";
-import tuitsReducer from "./reducers/tuits-reducer";
+import tuitsReducer from "./tuits/tuits-reducer";
 import profileReducer from "./reducers/profile-reducer";
 import { configureStore }
   from '@reduxjs/toolkit';
