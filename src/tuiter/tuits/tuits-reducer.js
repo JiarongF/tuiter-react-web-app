@@ -1,8 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-// in a7, we retrieve data from self-defined json file.
-// import tuits from './data/tuits.json';
 
-// in a8, we retrieve data from web server apis, import the thunks
 import {createTuitThunk, deleteTuitThunk, findTuitsThunk, updateTuitThunk} from "../../services/tuits-thunks";
 
 // initial state has no tuits and loading flag to display spinner

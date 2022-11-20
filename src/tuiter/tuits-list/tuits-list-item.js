@@ -48,7 +48,7 @@ const TuitsListItem = (
             <div className="mb-4">
               {tuit.tuit}
             </div>
-            {/* Bottom Icons */}
+
             <TuitsStats tuit={tuit}/>
           </div>
         </div>

@@ -7,10 +7,28 @@ const WhatsHappening = () => {
   let [whatsHappening, setWhatsHappening] = useState('');
   const dispatch = useDispatch();
 
+  const currentUser = {
+    "userName": "NASA",
+    "handle": "nasa",
+    "image": "../../images/nasa.png",
+  };
+
+  const templateTuit = {
+    ...currentUser,
+    "topic": "Space",
+    "time": "2h",
+    "replies": 0,
+    "retuits": 0,
+    "liked": false,
+    "disliked": false,
+    "likes": 0,
+    "dislikes": 0,
+  }
 
   const tuitClickHandler = () => {
     const newTuit = {
       tuit: whatsHappening,
+      ...templateTuit
     }
     dispatch(createTuitThunk(newTuit));
 
@@ -18,7 +36,7 @@ const WhatsHappening = () => {
   return (
       <div className="row">
         <div className="col-auto">
-          <img src="/images/nasa.png" width={60}/>
+          <img src="../../images/nasa.png" width={60}/>
         </div>
         <div className="col-10">
        <textarea value={whatsHappening} placeholder="What's happening?"
